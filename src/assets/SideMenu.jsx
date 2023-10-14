@@ -138,7 +138,7 @@ const Sidemenu = () => {
 
                     {/* one projects */}
                     <div>
-                        <div className='flex items-center gap-3 text-2xl pl-3 py-3 text-red-500'>
+                        <div className='flex items-center gap-3 text-2xl pl-3 pt-3 text-red-500'>
                             <FiPower className='text-3xl' />
                             <h1> Sign Out</h1>
                         </div>
