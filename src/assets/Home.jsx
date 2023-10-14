@@ -66,7 +66,7 @@ const Home = () => {
 
 
                     {/* -------------------the begining of the home section-------------------- */}
-                    <div className='bg-red-500  h-[80vh] w-screen  pt-5  absolute z-20'>
+                    <div className='bg-red-500   w-screen  pt-5  absolute z-20'>
 
                         <div >
                             <div className='mx-5 mb-2  flex justify-between  '>
