@@ -10,7 +10,7 @@ const Footer = () => {
         <>
 
             {/* overview section */}
-            <div className='flex justify-evenly py-2 bg-gray-50 text-gray-500 relative top-28'>
+            <div className='flex justify-between px-5 py-2 bg-gray-50 text-gray-500 relative top-28'>
                 <div className='flex flex-col justify-center items-center active'>
                     <LiaBarsSolid className='text-4xl' />
                     <h1 className='leading-tight text-sm font-bold'>Overview</h1>

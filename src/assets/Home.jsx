@@ -15,9 +15,13 @@ import Sidemenu from './SideMenu'
 import { useState } from 'react'
 import AccountName from './AccountName'
 import Logo from './Logo'
+import AccountBalance from './AccountBalance'
 
 const Home = () => {
 
+
+
+    // useState for sideMenu pop-up
     const [modal, setModal] = useState(false);
 
     const toggleModal = () => {
@@ -26,14 +30,25 @@ const Home = () => {
 
 
 
+    // useState for toggling view for Account Balance
+    const [accountBalance, setAccountBalance] = useState(false);
+    
+
+    const toggleAccountBalance = () => {
+        return setAccountBalance(!accountBalance) ? 'accountBalance' : '*****';
+    }
+
+
+    
+
+
 
     return (
         <  >
 
             <div className='relative'>
 
-                {/* the modal and overlay section */}
-
+                {/* ---------------------the modal and overlay section------------------ */}
 
                 {modal && (
 
@@ -79,18 +94,30 @@ const Home = () => {
                         <h1 className='font-bold text-gray-400'>
                             <AccountName />
                         </h1>
+
+
+
+                        {/*------------------- AccountBalance Section ------------- */}
                         <div className='flex justify-between'>
-                            <div className='flex text-2xl font-bold'>
+                            <div className='flex text-3xl font-semibold '>
                                 <h1 className='text-3xl'>N</h1>
-                                <h1>*****</h1>
+
+                                {accountBalance && (
+
+                                    <div className='text-green-400 '>
+                                        <AccountBalance />
+                                    </div>
+
+                                )}
+                                
                             </div>
 
 
                             {/* the Toggle button section */}
                             <div className='flex justify-between items-center gap-2'>
                                 <h1 className='text-gray-600'>Show balance</h1>
-                                <BsToggle2Off className=' text-3xl text-gray-500' />
-                                <BsToggle2On className=' hidden' />
+                                <BsToggle2Off className=' text-3xl text-gray-500' onClick={toggleAccountBalance} />
+                                {/* <BsToggle2On className=' hidden' /> */}
                             </div>
 
                         </div>
@@ -114,7 +141,7 @@ const Home = () => {
                         <h1>invest-Links</h1>
                         <hr />
 
-                        <div className='my-5 flex justify-evenly  items-center font-bold'>
+                        <div className='my-5 flex justify-between  items-center font-bold'>
 
                             <div className='flex flex-col justify-center items-center '>
                                 <ImCreditCard className='text-3xl' />
@@ -138,7 +165,7 @@ const Home = () => {
 
                         {/* second section */}
                         <hr />
-                        <div className='my-5 flex justify-evenly  items-center font-bold'>
+                        <div className='my-5 flex justify-between   items-center font-bold'>
 
                             <div className='flex flex-col justify-center items-center '>
                                 <IoFingerPrint className='text-3xl' />
