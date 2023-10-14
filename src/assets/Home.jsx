@@ -99,8 +99,8 @@ const Home = () => {
 
                         {/*------------------- AccountBalance Section ------------- */}
                         <div className='flex justify-between'>
-                            <div className='flex text-3xl font-semibold '>
-                                <h1 className='text-2xl'>N</h1>
+                            <div className='flex font-semibold '>
+                                <h1 className='text-2xl '>N</h1>
 
                                 {accountBalance && (
 
