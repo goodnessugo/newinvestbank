@@ -211,7 +211,7 @@ const Home = () => {
 
 
             {/* ---------------footer----------------------- */}
-            <div className='bg-yellow-500 h-[20vh] w-screen flex justify-center items-center'>
+            <div className='bg-yellow-500 h-[20vh] w-screen flex  items-start fixed'>
                 <Footer />
             </div>
 
