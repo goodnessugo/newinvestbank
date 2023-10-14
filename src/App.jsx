@@ -9,6 +9,7 @@ import SideMenu from './assets/SideMenu'
 import AccountName from './assets/AccountName'
 import Logo from './assets/Logo'
 import AccountBalance from './assets/AccountBalance'
+import History from './assets/History'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/accountname' element={<AccountName />}/>
           <Route path='/logo' element={<Logo />}/>
           <Route path='/accountbalance' element={<AccountBalance />}/>
+          <Route path='/history' element={<History />}/>
 
         </Routes>
       </BrowserRouter>
