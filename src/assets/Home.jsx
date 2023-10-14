@@ -115,7 +115,7 @@ const Home = () => {
 
                             {/* the Toggle button section */}
                             <div className='flex justify-between items-center gap-2'>
-                                <h1 className='text-gray-600'>Show balance</h1>
+                                <h1 className='text-sm text-gray-600'>Show balance</h1>
                                 <BsToggle2Off className=' text-3xl text-gray-500' onClick={toggleAccountBalance} />
                                 {/* <BsToggle2On className=' hidden' /> */}
                             </div>
