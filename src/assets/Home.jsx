@@ -99,8 +99,8 @@ const Home = () => {
 
                         {/*------------------- AccountBalance Section ------------- */}
                         <div className='flex justify-between'>
-                            <div className='flex font-semibold '>
-                                <h1 className='text-2xl '>N</h1>
+                            <div className='flex text-2xl font-semibold '>
+                                <h1 className=' '>N</h1>
 
                                 {accountBalance && (
 
@@ -115,7 +115,8 @@ const Home = () => {
 
                             {/* the Toggle button section */}
                             <div className='flex justify-between items-center gap-2'>
-                                <h1 className='text-sm text-gray-600'>Show balance</h1>
+                                <h1 className='text-xs text-gray-600'>Show balance</h1>
+
                                 <BsToggle2Off className=' text-3xl text-gray-500' onClick={toggleAccountBalance} />
                                 {/* <BsToggle2On className=' hidden' /> */}
                             </div>
