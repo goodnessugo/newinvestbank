@@ -38,11 +38,11 @@ const Home = () => {
                 {modal && (
 
                     <div className=' modal '>
-                        <div className=' h-screen w-5/6 bg-white absolute z-50'>
+                        <div className=' h-screen w-5/6 fixed bg-white absolute z-50'>
                             <Sidemenu />
                         </div>
 
-                        <div className='overlay h-screen w-screen bg-gray-500 opacity-50 absolute z-40' onClick={toggleModal}> </div>
+                        <div className='overlay h-screen w-screen fixed bg-gray-500 opacity-50 absolute z-40' onClick={toggleModal}> </div>
                         {/* <Sidemenu /> */}
                     </div>
 
