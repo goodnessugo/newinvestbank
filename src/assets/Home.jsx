@@ -211,7 +211,7 @@ const Home = () => {
 
 
             {/* ---------------footer----------------------- */}
-            <div className=' h-[20vh] w-screen flex  items-start fixed'>
+            <div className=' h-[20vh] w-screen flex  items-start fixed drop-shadow-md'>
                 <Footer />
             </div>
 

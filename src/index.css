@@ -18,3 +18,10 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
+.logo{
+    background-image: url('./assets/images/invest.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -4,7 +4,7 @@ const Logo = () => {
     return (
 
         <>
-            <div className='h-8 w-8 bg-white'>
+            <div className='h-10 w-10 bg-white logo'>
 
             </div>
         </>
