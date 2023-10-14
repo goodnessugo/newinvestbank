@@ -66,7 +66,7 @@ const Home = () => {
 
 
                     {/* -------------------the begining of the home section-------------------- */}
-                    <div className='bg-red-500   w-screen  pt-5  absolute z-20'>
+                    <div className='bg-red-500  h-[80vh] w-screen  pt-5  absolute z-20'>
 
                         <div >
                             <div className='mx-5 mb-2  flex justify-between  '>
@@ -141,27 +141,27 @@ const Home = () => {
 
                             {/*  the links section*/}
 
-                            <div className='px-5 py-3  bg-green-500 '>
+                            <div className='px-5 py-3 bg-white h-[46vh]'>
                                 <h1>invest-Links</h1>
                                 <hr />
 
-                                <div className='my-5 flex justify-between bg-purple-400 items-center font-bold'>
+                                <div className='my-5 flex justify-between  items-center '>
 
                                     <div className='flex flex-col justify-center items-center '>
                                         <ImCreditCard className='text-3xl' />
-                                        <h1 className='text-sm'>Cards</h1>
+                                        <h1 className='text-xs'>Cards</h1>
                                     </div>
                                     <div className='flex flex-col justify-center items-center'>
                                         <PiTelevisionLight className='text-4xl' />
-                                        <h1 className='text-sm'>Cable Tv</h1>
+                                        <h1 className='text-xs'>Cable Tv</h1>
                                     </div>
                                     <div className='flex flex-col justify-center items-center'>
                                         <MdFlightTakeoff className='text-4xl' />
-                                        <h1 className='leading-tight text-sm'>Travel & <br /> Leisure</h1>
+                                        <h1 className='leading-tight text-xs'>Travel & <br /> Leisure</h1>
                                     </div>
                                     <div className='flex flex-col justify-center items-center'>
                                         <BsQrCodeScan className='text-3xl' />
-                                        <h1 className='text-sm'>QR Payments</h1>
+                                        <h1 className='text-xs'>QR Payments</h1>
                                     </div>
 
                                 </div>
@@ -169,23 +169,23 @@ const Home = () => {
 
                                 {/* second section */}
                                 <hr />
-                                <div className='my-5 flex justify-between  bg-purple-400 items-center font-bold'>
+                                <div className='my-5 flex justify-between   items-center '>
 
                                     <div className='flex flex-col justify-center items-center '>
                                         <IoFingerPrint className='text-3xl' />
-                                        <h1 className='text-sm'>myBVN</h1>
+                                        <h1 className='text-xs'>myBVN</h1>
                                     </div>
                                     <div className='flex flex-col justify-center items-center'>
                                         <CgData className='text-4xl' />
-                                        <h1 className='text-sm'>Data</h1>
+                                        <h1 className='text-xs'>Data</h1>
                                     </div>
                                     <div className='flex flex-col justify-center items-center'>
                                         <RiShoppingCartFill className='text-4xl' />
-                                        <h1 className='leading-tight text-sm'>Shopping</h1>
+                                        <h1 className='leading-tight text-xs'>Shopping</h1>
                                     </div>
                                     <div className='flex flex-col justify-center items-center'>
                                         <IoSettingsOutline className='text-3xl' />
-                                        <h1 className='text-sm'>Settings</h1>
+                                        <h1 className='text-xs'>Settings</h1>
                                     </div>
 
                                 </div>
@@ -211,7 +211,7 @@ const Home = () => {
 
 
             {/* ---------------footer----------------------- */}
-            <div className='bg-yellow-500 h-[20vh] w-screen flex  items-start fixed'>
+            <div className=' h-[20vh] w-screen flex  items-start fixed'>
                 <Footer />
             </div>
 
