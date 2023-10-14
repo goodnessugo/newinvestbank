@@ -32,7 +32,7 @@ const Home = () => {
 
     // useState for toggling view for Account Balance
     const [accountBalance, setAccountBalance] = useState(false);
-    
+
 
     const toggleAccountBalance = () => {
         return setAccountBalance(!accountBalance) ? 'accountBalance' : '*****';
@@ -100,7 +100,7 @@ const Home = () => {
                         {/*------------------- AccountBalance Section ------------- */}
                         <div className='flex justify-between'>
                             <div className='flex text-3xl font-semibold '>
-                                <h1 className='text-3xl'>N</h1>
+                                <h1 className='text-2xl'>N</h1>
 
                                 {accountBalance && (
 
