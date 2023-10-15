@@ -9,6 +9,7 @@ import { IoFingerPrint, IoSettingsOutline } from 'react-icons/io5'
 import { CgData } from 'react-icons/cg'
 import { RiShoppingCartFill } from 'react-icons/ri'
 import { LiaBarsSolid } from 'react-icons/lia'
+import { TbCurrencyNaira } from 'react-icons/tb'
 import Footer from './Footer'
 import SideMenuButton from './SideMenuButton'
 import Sidemenu from './SideMenu'
@@ -34,10 +35,20 @@ const Home = () => {
     // useState for toggling view for Account Balance
     const [accountBalance, setAccountBalance] = useState(false);
 
+    const [toggleButton, setToggleButton] = useState(false);
+
+    const [hiddenText, setHiddenText] = useState(false);
+
 
     const toggleAccountBalance = () => {
-        return setAccountBalance(!accountBalance) ? 'accountBalance' : '*****';
+        setAccountBalance(!accountBalance)
+        setToggleButton(!toggleButton)
+        setHiddenText(!hiddenText)
     }
+
+
+
+
 
 
 
@@ -101,33 +112,52 @@ const Home = () => {
                                 {/*------------------- AccountBalance Section ------------- */}
                                 <div className='flex justify-between'>
                                     <div className='flex text-2xl font-semibold '>
-                                        <h1 className=' '>N</h1>
+                                        <TbCurrencyNaira />
 
-                                        {accountBalance && (
 
-                                            <div className='text-green-400 '>
+
+                                        {/* this code simple says if accountBalance is not true display the asterics "*******"  */}
+
+                                        {accountBalance ?
+                                            <div className=''>
                                                 <AccountBalance />
                                             </div>
 
-                                        )}
+                                            : '******'
+                                        }
 
                                     </div>
 
 
-                                    {/* the Toggle button section */}
+                                    {/* the Toggle button section between Account Balance,  toggle Button,  */}
                                     <div className='flex justify-between items-center gap-2'>
                                         <h1 className='text-xs text-gray-600'>Show balance</h1>
 
-                                        <BsToggle2Off className=' text-3xl text-gray-500' onClick={toggleAccountBalance} />
-                                        {/* <BsToggle2On className=' hidden' /> */}
+
+
+
+                                        {
+                                            toggleButton ?
+
+                                                <BsToggle2On className=' text-3xl text-red-500 ' onClick={toggleAccountBalance} />
+                                                :
+                                                <BsToggle2Off className='text-3xl text-gray-500' onClick={toggleAccountBalance} />
+                                        }
+
+
+
                                     </div>
 
                                 </div>
                             </div>
 
                             {/* the ledger and History section */}
-                            <div className='px-5 py-3 mt-3 flex justify-between font-bold text-white bg-gray-600'>
-                                <h1>Ledger Balance: <span>Hidden</span></h1>
+                            <div className='px-5 py-3 mt-3 flex justify-between font-semibold text-white bg-gray-600 text-sm'>
+                                <h1>Ledger Balance: 
+                                    { hiddenText ?
+
+                                        <span className='pl-2'>Show</span> : <span className='pl-2'>Hidden</span>}
+                                </h1>
 
 
                                 {/* History Section */}
