@@ -18,6 +18,7 @@ import AccountName from './AccountName'
 import Logo from './Logo'
 import AccountBalance from './AccountBalance'
 import { Link } from 'react-router-dom'
+import Modal from './Modal'
 
 const Home = () => {
 
@@ -75,6 +76,8 @@ const Home = () => {
                         </div>
                     )}
 
+                    
+
 
                     {/* -------------------the begining of the home section-------------------- */}
                     <div className='bg-red-500   w-screen  pt-5  absolute z-20'>
@@ -131,7 +134,14 @@ const Home = () => {
 
                                     {/* the Toggle button section between Account Balance,  toggle Button,  */}
                                     <div className='flex justify-between items-center gap-2'>
-                                        <h1 className='text-xs text-gray-600'>Show balance</h1>
+                                        <h1 className='text-xs text-gray-600'>
+                                           
+                                            {hiddenText ?
+
+                                                <span className='pe-2'>Hide</span> : <span className='pe-2'>Show</span>
+
+                                            } 
+                                            balance</h1>
 
 
 
@@ -152,11 +162,15 @@ const Home = () => {
                             </div>
 
                             {/* the ledger and History section */}
-                            <div className='px-5 py-3 mt-3 flex justify-between font-semibold text-white bg-gray-600 text-sm'>
-                                <h1>Ledger Balance: 
+                            <div className='px-5 py-3 mt-3 flex justify-between font-semibold text-white bg-gray-600 text-xs'>
+                                <h1>Ledger Balance:
                                     { hiddenText ?
 
-                                        <span className='pl-2'>Show</span> : <span className='pl-2'>Hidden</span>}
+                                        <span className=''> Show </span>
+                                         : 
+                                         <span className='pl-2'>Hidden</span>
+
+                                    }
                                 </h1>
 
 
