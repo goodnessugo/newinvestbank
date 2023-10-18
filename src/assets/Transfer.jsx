@@ -97,7 +97,7 @@ const Transfer = () => {
 
 
                             {/* -----------one box------------- */}
-                            <div className=' active flex flex-col justify-between border h-28 w-28 rounded p-3'>
+                            <div className=' active flex flex-col justify-between border h-24 w-24 rounded p-3'>
                                 <div className='flex justify-between items-start pb-3 text-lg'>
                                     <IoPersonSharp />  <IoCheckmarkCircleSharp />
                                 </div>
@@ -106,7 +106,7 @@ const Transfer = () => {
 
 
                             {/* -----------one box------------- */}
-                            <div className='flex flex-col  justify-between border h-28 w-28 rounded p-3'>
+                            <div className='flex flex-col  justify-between border h-24 w-24 rounded p-3'>
                                 <div className='flex justify-between items-start pb-3 text-lg'>
                                     <BsBank2 />
                                 </div>
@@ -115,7 +115,7 @@ const Transfer = () => {
 
 
                             {/* -----------one box------------- */}
-                            <div className='flex flex-col justify-between border h-28 w-28 rounded p-3'>
+                            <div className='flex flex-col justify-between border h-20 w-20 rounded p-3'>
                                 <div className='flex justify-between items-start pb-3 text-lg'>
                                     <BsBank2 />
                                 </div>
