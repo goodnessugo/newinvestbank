@@ -93,7 +93,7 @@ const Airtime = () => {
 
               <h1 className='py-3 font-semibold'>Select Mobile Operator</h1>
 
-              <div className='text-xs flex justify-between items-center overflow-y-hidden w-full h-auto gap-4 bg-yellow-500  '>
+              <div className='text-xs flex justify-between items-center overflow-y-hidden w-full h-auto gap-4  '>
 
 
                 {/* -----------one box------------- */}
@@ -149,9 +149,9 @@ const Airtime = () => {
 
 
 
-                <div>
+                {/* <div>
                   <BsArrowRightCircle />
-                </div>
+                </div> */}
 
 
 
@@ -166,29 +166,16 @@ const Airtime = () => {
                 <div>
                   <form action="">
                     <div>
-                      <h1 className='pt-7 mb-2 font-semibold'>Select Source Account</h1>
-                      <select placeholder='Select Account' className='text-sm p-5 w-full border'>
-                        <option >Select Account</option>
-                        <option>Home</option>
-                        <option selected>Joy</option>
-                      </select>
+                      <h1 className='pt-7 mb-2 font-semibold'>Mobile Number</h1>
+                      
+                      <input type="text"  placeholder='Mobile Number' className='text-sm p-5 w-full border'/>
                     </div>
-                    <div>
-                      <h1 className='pt-7 mb-2 font-semibold'>Select Destination  Account</h1>
-                      <select placeholder='Select Account' className='text-sm p-5 w-full border'>
-                        <option >Select Account</option>
-                        <option>Home</option>
-                        <option selected>Joy</option>
-                      </select>
-                    </div>
+                    
                     <div>
                       <h1 className='pt-7 mb-2 font-semibold'>Amount</h1>
                       <input type="text" placeholder='0.00' className='text-sm p-5 w-full border' />
                     </div>
-                    <div>
-                      <h1 className='pt-7 mb-2 font-semibold'>Transaction Description</h1>
-                      <input type="text" placeholder='Transaction Description' className='text-sm p-5 w-full border' />
-                    </div>
+                    
                     <hr className='mt-5 mb-7' />
                     <button className='text-sm py-3  w-full border rounded bg-gray-300 text-white'>CONTINUE</button>
 
