@@ -24,7 +24,7 @@ const Footer = () => {
                     </Link>
 
 
-                    <Link to='airtime'>
+                    <Link to='/airtime'>
 
                         <div className='flex flex-col justify-center items-center'>
                             <MdOutlineMobileScreenShare className='text-4xl' />
