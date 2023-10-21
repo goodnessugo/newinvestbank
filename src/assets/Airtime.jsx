@@ -93,7 +93,7 @@ const Airtime = () => {
 
               <h1 className='py-3 font-semibold'>Select Mobile Operator</h1>
 
-              <div className='text-xs flex justify-between items-center overflow-y-hidden w-full h-auto  '>
+              <div className='text-xs flex justify-between items-center overflow-y-hidden w-full h-auto gap-4 bg-yellow-500  '>
 
 
                 {/* -----------one box------------- */}
