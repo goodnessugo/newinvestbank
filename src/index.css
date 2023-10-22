@@ -32,3 +32,36 @@
     width: 300px;
     height: 200px;
   }
+
+
+  /* the background images for the networks */
+  .mtn{
+    background-image: url('./assets/images/mtn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .airtel{
+    background-image: url('./assets/images/airtel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .glo{
+    background-image: url('./assets/images/glo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .nineMobile{
+    background-image: url('./assets/images/9mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+

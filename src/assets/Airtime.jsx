@@ -99,9 +99,9 @@ const Airtime = () => {
                 {/* -----------one box------------- */}
                 <div>
 
-                  <div className=' active flex flex-col justify-between border h-20 w-20 rounded p-3'>
-                    <div className='flex justify-between items-start pb-3 text-lg'>
-                      <IoPersonSharp />  <IoCheckmarkCircleSharp />
+                  <div className=' mtn active flex flex-col justify-between border h-20 w-20 rounded p-3'>
+                    <div className='flex justify-end items-start pb-3 text-lg'>
+                       <IoCheckmarkCircleSharp />
                     </div>
 
                   </div>
@@ -112,10 +112,8 @@ const Airtime = () => {
                 {/* -----------one box------------- */}
                 <div>
 
-                  <div className=' active flex flex-col justify-between border h-20 w-20 rounded p-3'>
-                    <div className='flex justify-between items-start pb-3 text-lg'>
-                      <IoPersonSharp />  <IoCheckmarkCircleSharp />
-                    </div>
+                  <div className='airtel active flex flex-col justify-between border h-20 w-20 rounded p-3'>
+                    
 
                   </div>
                   <h1>airtel</h1>
@@ -125,10 +123,8 @@ const Airtime = () => {
                 {/* -----------one box------------- */}
                 <div>
 
-                  <div className=' active flex flex-col justify-between border h-20 w-20 rounded p-3'>
-                    <div className='flex justify-between items-start pb-3 text-lg'>
-                      <IoPersonSharp />  <IoCheckmarkCircleSharp />
-                    </div>
+                  <div className='glo active flex flex-col justify-between border h-20 w-20 rounded p-3'>
+                    
 
                   </div>
                   <h1>Glo</h1>
@@ -138,10 +134,8 @@ const Airtime = () => {
                 {/* -----------one box------------- */}
                 <div>
 
-                  <div className=' active flex flex-col justify-between border h-20 w-20 rounded p-3'>
-                    <div className='flex justify-between items-start pb-3 text-lg'>
-                      <IoPersonSharp />  <IoCheckmarkCircleSharp />
-                    </div>
+                  <div className='nineMobile active flex flex-col justify-between border h-20 w-20 rounded p-3'>
+                    
 
                   </div>
                   <h1>9 Mobile</h1>
