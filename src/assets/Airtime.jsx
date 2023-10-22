@@ -100,8 +100,8 @@ const Airtime = () => {
                 <div>
 
                   <div className=' mtn active flex flex-col justify-between border h-20 w-20 rounded p-3'>
-                    <div className='flex justify-end items-start pb-3 text-lg'>
-                       <IoCheckmarkCircleSharp />
+                    <div className='flex justify-end items-start  text-lg'>
+                      <IoCheckmarkCircleSharp />
                     </div>
 
                   </div>
@@ -113,7 +113,7 @@ const Airtime = () => {
                 <div>
 
                   <div className='airtel active flex flex-col justify-between border h-20 w-20 rounded p-3'>
-                    
+
 
                   </div>
                   <h1>airtel</h1>
@@ -124,7 +124,7 @@ const Airtime = () => {
                 <div>
 
                   <div className='glo active flex flex-col justify-between border h-20 w-20 rounded p-3'>
-                    
+
 
                   </div>
                   <h1>Glo</h1>
@@ -135,7 +135,7 @@ const Airtime = () => {
                 <div>
 
                   <div className='nineMobile active flex flex-col justify-between border h-20 w-20 rounded p-3'>
-                    
+
 
                   </div>
                   <h1>9 Mobile</h1>
@@ -161,15 +161,15 @@ const Airtime = () => {
                   <form action="">
                     <div>
                       <h1 className='pt-7 mb-2 font-semibold'>Mobile Number</h1>
-                      
-                      <input type="text"  placeholder='Mobile Number' className='text-sm p-5 w-full border'/>
+
+                      <input type="text" placeholder='Mobile Number' className='text-sm p-5 w-full border' />
                     </div>
-                    
+
                     <div>
                       <h1 className='pt-7 mb-2 font-semibold'>Amount</h1>
                       <input type="text" placeholder='0.00' className='text-sm p-5 w-full border' />
                     </div>
-                    
+
                     <hr className='mt-5 mb-7' />
                     <button className='text-sm py-3  w-full border rounded bg-gray-300 text-white'>CONTINUE</button>
 

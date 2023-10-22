@@ -11,6 +11,7 @@ import { MdFlightTakeoff } from 'react-icons/md'
 import { RiShoppingCartFill } from 'react-icons/ri'
 import { ImCreditCard } from 'react-icons/im'
 import { FiPower } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 
 const Sidemenu = () => {
@@ -38,41 +39,54 @@ const Sidemenu = () => {
 
 
                     {/* one projects */}
-                    <div>
-                        <div className='flex items-center gap-3  pl-3 py-3'>
-                            <LiaBarsSolid />
-                            <h1> Overview</h1>
+
+                    <Link to='/'>
+                        <div>
+                            <div className='flex items-center gap-3  pl-3 py-3'>
+                                <LiaBarsSolid />
+                                <h1> Overview</h1>
+                            </div>
+                            <hr />
                         </div>
-                        <hr />
-                    </div>
+                    </Link>
+
+
+
+                    {/* one projects */}
+
+                    <Link to='/transfer'>
+
+                        <div>
+                            <div className='flex items-center gap-3  pl-3 py-3'>
+
+
+                                <BiTransfer />
+                                <h1> Transfer</h1>
+                            </div>
+                            <hr />
+                        </div>
+                    </Link>
+
+
+
+                    {/* one projects */}
+
+                    <Link to='/airtime'>
+                        <div>
+                            <div className='flex items-center gap-3  pl-3 py-3'>
+                                <MdOutlineMobileScreenShare />
+                                <h1> Airtime</h1>
+                            </div>
+                            <hr />
+                        </div>
+
+                    </Link>
 
 
                     {/* one projects */}
                     <div>
                         <div className='flex items-center gap-3  pl-3 py-3'>
-
-
-                            <BiTransfer  />
-                            <h1> Transfer</h1>
-                        </div>
-                        <hr />
-                    </div>
-
-
-                    {/* one projects */}
-                    <div>
-                        <div className='flex items-center gap-3  pl-3 py-3'>
-                            <MdOutlineMobileScreenShare  />
-                            <h1> Airtime</h1>
-                        </div>
-                        <hr />
-                    </div>
-
-
-                    {/* one projects */}
-                    <div>
-                        <div className='flex items-center gap-3  pl-3 py-3'>
-                            <CgData  />
+                            <CgData />
                             <h1> Data Bundle</h1>
                         </div>
                         <hr />
@@ -80,14 +94,19 @@ const Sidemenu = () => {
 
 
                     {/* one projects */}
-                    <div>
-                        <div className='flex items-center gap-3  pl-3 py-3'>
-                            <FaMoneyBill1Wave />
-                            <h1> Bill payment</h1>
 
+
+                    <Link to='/bills'>
+                        <div>
+                            <div className='flex items-center gap-3  pl-3 py-3'>
+                                <FaMoneyBill1Wave />
+                                <h1> Bill payment</h1>
+
+                            </div>
+                            <hr />
                         </div>
-                        <hr />
-                    </div>
+                    </Link>
+
 
 
 
@@ -95,7 +114,7 @@ const Sidemenu = () => {
                     <div>
                         <div className='flex items-center gap-3  pl-3 py-3'>
 
-                            <BsQrCodeScan  />
+                            <BsQrCodeScan />
                             <h1> QR Scanner</h1>
                         </div>
                         <hr />
@@ -106,7 +125,7 @@ const Sidemenu = () => {
                     {/* one projects */}
                     <div>
                         <div className='flex items-center gap-3  pl-3 py-3'>
-                            <MdFlightTakeoff  />
+                            <MdFlightTakeoff />
                             <h1> Travel & Leisure</h1>
                         </div>
                         <hr />
@@ -117,7 +136,7 @@ const Sidemenu = () => {
                     {/* one projects */}
                     <div>
                         <div className='flex items-center gap-3  pl-3 py-3'>
-                            <RiShoppingCartFill  />
+                            <RiShoppingCartFill />
                             <h1>Shopping</h1>
                         </div>
                         <hr />
@@ -128,7 +147,7 @@ const Sidemenu = () => {
                     {/* one projects */}
                     <div>
                         <div className='flex items-center gap-3  pl-3 py-3'>
-                            <ImCreditCard  />
+                            <ImCreditCard />
                             <h1> Cards</h1>
                         </div>
                         <hr />
@@ -139,7 +158,7 @@ const Sidemenu = () => {
                     {/* one projects */}
                     <div>
                         <div className='flex items-center gap-3  pl-3 py-3 text-red-500'>
-                            <FiPower  />
+                            <FiPower />
                             <h1> Sign Out</h1>
                         </div>
                         <hr />

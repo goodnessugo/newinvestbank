@@ -7,19 +7,28 @@
 
 
 
-.active{
+/* this control the footer button or any active and inactive */
+
+.active {
     color: red;
 }
+
+
+.inactive {
+    color: gray;
+}
+
+
 
 /* .overlay{
     position: relative;
 } */
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
-.logo{
+.logo {
     background-image: url('./assets/images/invest.jpg');
     background-position: center;
     background-size: cover;
@@ -31,37 +40,34 @@
 .swiper {
     width: 300px;
     height: 200px;
-  }
+}
 
 
-  /* the background images for the networks */
-  .mtn{
+/* the background images for the networks */
+.mtn {
     background-image: url('./assets/images/mtn.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
 
-  .airtel{
+.airtel {
     background-image: url('./assets/images/airtel.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
 
-  .glo{
+.glo {
     background-image: url('./assets/images/glo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
 
-  .nineMobile{
+.nineMobile {
     background-image: url('./assets/images/9mobile.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-
-
+}
